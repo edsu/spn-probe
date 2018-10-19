@@ -4,7 +4,7 @@ every 12 hours, and save the response to the data subdirectory:
 
     0 0,12 * * * * /hom/ed/Projects/spn-probe/probe.py
 
-The resulting file will look something like this:
+The resulting file for each run will look something like this:
 
 ```json
 {
