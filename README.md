@@ -1,4 +1,4 @@
-A little utility to run from cron to save a given page in Internet Archive's
+A utility to run from cron to save a given timestamped URL in Internet Archive's
 Save Page Now for use as trace data. Here is a sample crontab to that will run
 every 12 hours, and save the response to the data subdirectory:
 
