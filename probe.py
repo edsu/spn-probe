@@ -8,15 +8,19 @@ from datetime import datetime as dt
 url = 'https://mith.umd.edu/research/'
 t = dt.now().strftime('%Y%m%d%H%M%S')
 
+msg = {"started": t}
+
 try:
     spn_url = 'https://web.archive.org/save/' + url
     resp = requests.get(spn_url, headers={'User-Agent': 'spn-probe'})
-    with open('data/%s.txt' % t, "w") as out:
-        out.write(json.dumps(dict(resp.headers), indent=2) + "\n\n")
-        out.write(resp.text)
-        out.write("finished: %s" % dt.now().strftime('%Y%m%d%H%M%S'))
+    msg["status_code"] = resp.status_code
+    msg["headers"] = dict(resp.headers)
+    msg["text"] = resp.text
 
 except Exception as e:
-    with open('data/%s.txt' % t, "wt") as out:
-        out.write(str(e) + "\n\n")
-        out.write("finished: %s" % dt.now().strftime('%Y%m%d%H%M%S'))
+    msg["error"] = str(e)
+
+msg["finished"] = dt.now().strftime('%Y%m%d%H%M%S')
+
+open("data/%s.json" % t, "w").write(json.dumps(msg, indent=2))
+
