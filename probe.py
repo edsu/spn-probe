@@ -5,8 +5,9 @@ import requests
 
 from datetime import datetime as dt
 
-url = 'https://mith.umd.edu/research/'
 t = dt.now().strftime('%Y%m%d%H%M%S')
+
+url = 'https://mith.umd.edu/research/'
 spn_url = 'https://web.archive.org/save/' + url + '?t=%s' % t
 
 msg = {
