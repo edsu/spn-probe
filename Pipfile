@@ -13,4 +13,4 @@ python_version = "3.6"
 
 [scripts]
 probe = "python probe.py https://mith.umd.edu/research/"
-probe-repeat = "python probe.py --repeat 2 --sleep 10 https://mith.umd.edu/research/"
+probe-repeat = "python probe.py --repeat 60 --sleep 60 https://mith.umd.edu/research/"
