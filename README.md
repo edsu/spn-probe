@@ -1,8 +1,10 @@
 spn-probe is a utility to run from cron to save a given timestamped URL in
-Internet Archive's Save Page Now for use as trace data. Here is a sample crontab
-to that will run every 12 hours, and save the response to the data subdirectory:
+Internet Archive's Save Page Now for use as trace data in the generated WARC
+files created at the Internet Archive. Here is a sample crontab to that will
+run every 12 hours, and save the response to the data subdirectory:
 
     0 0,12 * * * * /hom/ed/Projects/spn-probe/probe.py https://mith.umd.edu/research/ 
+
 The resulting file for each run will look something like below. Note how the URL
 that is archived has additional query parameters to identify the time of the
 request and the user agent. This is so the exact request can be identified in
@@ -45,3 +47,5 @@ parameters are used.
   "finished": "20181019212932"
 }
 ```
+
+In addition to the SPN response also recorded here are the web server access log messages that were generated as a result of the website in question (mith.umd.edu) being crawled.
