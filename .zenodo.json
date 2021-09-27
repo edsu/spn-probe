@@ -1,0 +1,21 @@
+{
+  "title": "spn-probe",
+  "upload_type": "dataset",
+  "description": "Trace testing the Internet Archive's SavePageNow service",
+  "creators": [
+    {
+      "name": "Summers, Ed",
+      "affiliation": "University of Maryland",
+      "orcid": "0000-0001-7320-8150"
+    },
+    {
+      "name": "Walker, Shawn",
+      "affiliation": "Arizona State University"
+    },
+    {
+      "name": "Jessica Ogden",
+      "affiliation": "University of Bristol"
+    }
+  ]
+}
+

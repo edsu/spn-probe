@@ -1,4 +1,8 @@
-spn-probe is a utility to run from cron to save a given timestamped URL in
+# spn-probe
+
+<a href="https://doi.org/10.5281/zenodo.5529700"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5529700.svg" alt="DOI"></a>
+
+*spn-probe* is a utility to run from cron to save a given timestamped URL in
 Internet Archive's Save Page Now for use as trace data in the generated WARC
 files created at the Internet Archive. Here is a sample crontab to that will
 run every 12 hours, and save the response to the data subdirectory:
