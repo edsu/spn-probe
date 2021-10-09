@@ -1,0 +1,32 @@
+Time (UTC),Time (EDT),Tool,URL,Done?,Notes
+2018-10-23 23:00 UTC,2018-10-23 19:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181024000000,x ,used 00:00:00 url instead of 23:00:00 because I was off by one
+2018-10-23 23:00 UTC,2018-10-23 19:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181024000000,x,used 00:00:00 url instead of 23:00:00 because I was off by one
+,,,,,
+,,,,,
+2018-10-24 11:00 UTC,2018-10-24 07:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181024110000,i think i did this?,
+2018-10-24 11:00 UTC,2018-10-24 07:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181024110000,i think i did this?,
+,,,,,
+,,,,,
+2018-10-24 23:00 UTC,2018-10-24 19:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181024230000,x,
+2018-10-24 23:00 UTC,2018-10-24 19:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181024230000,x,
+,,,,,
+,,,,,
+2018-10-25 11:00 UTC,2018-10-25 07:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181025110000,x,
+2018-10-25 11:00 UTC,2018-10-25 07:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181025110000,x,
+,,,,,
+,,,,,
+2018-10-25 23:00 UTC,2018-10-25 19:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181025230000,x,
+2018-10-25 23:00 UTC,2018-10-25 19:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181025230000,x,
+,,,,,
+,,,,,
+2018-10-26 11:00 UTC,2018-10-26 07:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181026110000,x,
+2018-10-26 11:00 UTC,2018-10-26 07:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181026110000,x,
+,,,,,
+,,,,,
+2018-10-26 23:00 UTC,2018-10-26 19:00 EDT,Website,https://mith.umd.edu/research/?ua=firefox&t=20181026230000,forgot,
+2018-10-26 23:00 UTC,2018-10-26 19:00 EDT,Extension,https://mith.umd.edu/research/?ua=extension&t=20181026230000,forgot,
+,,,,,
+,,,,,
+"2018-10-25 12:00:00 UTC 
+- 2018-10-25 12:10 UTC 
+request every 10 seconds",,,,,

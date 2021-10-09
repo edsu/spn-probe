@@ -52,4 +52,24 @@ parameters are used.
 }
 ```
 
-In addition to the SPN response also recorded here are the web server access log messages that were generated as a result of the website in question (mith.umd.edu) being crawled.
+In addition to the SPN response also recorded here are the web server access log messages that were generated as a result of the website in question (mith.umd.edu) being crawled. These can be found in data/varnish.tar.gz
+
+Finally we conducted a series of manual SavePageNow requests using the Internet
+Archive's web form as well as the Firefox browser extension. Each request URL
+identified a page on a web server that we had access logs for (mith.umd.edu).
+The URL also included query parameters for a unique timetamp (t) and the
+user-agent (ua). The experiment was designed to look on and around our sample
+day in question: September 25, 2018. You can see the plan, including the URLs
+used in `spn-experiment.csv` which is a CSV for the Google Sheet that was used
+to log the tests.
+
+The results of these probes showed that:
+
+1. The User-Agent of the requesting client is used by SPN to request the resources from the server: so spn-probe and the Firefox User-Agent in our case.
+2. The Accept header of the requesting client is used by SPN to request the resources from the server: e.g. `*/*` for spn-probe and `text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8` for Firefox
+3. Using the web form in a browser to fetch a page resulted in 107 requests to the web server, the initial HTML and all the JavaScript, CSS and image files that it referenced. See `data/firefox.log`
+4. Using the spn-probe to programmatically request the page be archived only archived the HTML file. See `data/spn-probe.log`
+5. Both modes resulted in SPN identifying itself with the Via HTTP Header, e.g. `Via: HTTP/1.0 web.archive.org (Wayback Save Page)`
+6. All the requests came from 10 IP addresses in a block of addresses owned by the Internet Archive: 207.241.224.0 - 207.241.239.255
+
+
